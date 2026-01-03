@@ -1,0 +1,26 @@
+{
+  "name": "@easy-claims/api",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "catalog:",
+    "@easy-claims/config": "workspace:*"
+  },
+  "dependencies": {
+    "@trpc/server": "catalog:",
+    "@trpc/client": "catalog:",
+    "hono": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:",
+    "@easy-claims/env": "workspace:*",
+    "@easy-claims/db": "workspace:*"
+  }
+}
